@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type='text/css'>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+</head>
+<body>
+   <div class="hero">
+       <nav>
+           <img data-aos="fade-right" data-aos-duration="1000" src="logo.png">
+           <ul>
+               <li data-aos="fade-up" data-aos-duration="1000"><a href="#" class="active">HOME</a></li>
+               <li data-aos="fade-up" data-aos-duration="1000"><a href="#galerie" >Pictures</a></li>
+               <li data-aos="fade-up" data-aos-duration="1000"><a href="#customers">Customers</a></li>
+               <li data-aos="fade-up" data-aos-duration="1000"><a href="#about">About US</a></li>
+           </ul>
+           <div class="toogle" id="toogle">
+               <img src="menu.png" alt="">
+           </div>
+           <a class="btn" data-aos="fade-left" data-aos-duration="1500" href="#">See More</a>
+       </nav>
+       <div data-aos="zoom-in" data-aos-duration="1500" class="content">
+           <h1><span>R</span>oyalty <span>F</span>ree <span>S</span>tock <span>P</span>hotos</h1>
+           <input type="text" placeholder="Search free HD Photos">
+           <div class="cathegoties">
+               <h4>Popular:</h4>
+               <a href="#">Travel</a>,
+               <a href="#">Technologie</a>,
+               <a href="#">Sport</a>,
+               <a href="#">Gaming</a>,
+               <a href="#">Nature</a>, 
+           </div>
+       </div>
+   </div>
+
+
+    <div class="galerie" id='galerie'>
+        <h1>Some Pictures</h1>
+        <div class="pictures">
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic1.png"></div>
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic2.png"></div>
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic3.png"></div>
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic4.png"></div>
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic5.png"></div>
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic6.png"></div>
+            <div class="pic" data-aos="zoom-in" data-aos-duration="1000"><img src="pic7.png"></div>
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic8.png"></div>
+            <div class="pic"  data-aos="zoom-in" data-aos-duration="1000"><img src="pic9.png"></div>
+            <div class="pic" data-aos="zoom-in" data-aos-duration="1000"><img src="pic10.png"></div>
+
+        </div>
+    </div>
+    <br>
+    <div class="customers" id="customers">
+        <h1>Our customers</h1>
+      <div class="flex">
+          <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" class="row"><img src="microsoft.png"></div>
+          <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" class="row"><img src='facebook.png'></div>
+          <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" class="row"><img src="walmart.png"></div>
+          <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" class="row"><img src="adobe.png"></div>
+      </div>     
+        </div>
+    </div>
+    <div data-aos="zoom-in-up" data-aos-duration="1500" class="about" id="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sunt consequatur ab doloremque dolores saepe unde sapiente repudiandae ducimus totam earum, aperiam repellendus harum quibusdam provident voluptate voluptas est distinctio at quasi sit nulla. Obcaecati suscipit veniam magni inventore totam.
+
+        </p>
+
+    </div>
+    <div class="copy" data-aos="" data-aos-delay="1000" data-aos-duration="1000">
+        © 2020 Copyright:  Naoufel Bahassoune 👨‍💻
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('nav ul').hide();
+        $('#toogle').click(function(){
+            $('nav ul').slideToggle(1000);
+        })
+        })
+    </script>
+</body>
+</html>
